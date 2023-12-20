@@ -24,7 +24,8 @@ public class MyApplication {
             System.out.print(points[i].toString() + " ");
         }
         System.out.println("\nPerimeter of your shape is: " + shape.calculatePerimeter());
-        System.out.println("Average side of your shape is: " + shape.getAverageSide());
         System.out.println("Longest side of your shape is: " + shape.getLongestSide());
+        System.out.println("Average side of your shape is: " + shape.getAverageSide());
+
     }
 }
