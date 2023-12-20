@@ -9,7 +9,7 @@ public class Shape {
         setPoints(setofpoints);
     }
 
-    public double perimeter() {
+    public double calculatePerimeter() {
         double perimeter = 0;
         for (int i = 0; i < points.length - 1; i++) {
             perimeter += Math.abs(points[i].distanceTo(points[i], points[i + 1]));
@@ -18,7 +18,7 @@ public class Shape {
         return perimeter;
     }
 
-    public double longestside() {
+    public double getLongestSide() {
         double max = 0;
         for (int i = 0; i < points.length - 1; i++) {
              if( Math.abs(points[i].distanceTo(points[i], points[i + 1])) > max)
@@ -27,7 +27,7 @@ public class Shape {
         return max;
     }
 
-    public double averageside() {
-        return this.perimeter() / this.points.length;
+    public double getAverageSide() {
+        return this.calculatePerimeter() / this.points.length;
     }
 }

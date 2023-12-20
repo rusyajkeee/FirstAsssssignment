@@ -8,13 +8,13 @@ public class MyApplication {
         int n = sc.nextInt();
         Point[] points = new Point[n];
 
-        int x;
-        int y;
+        double x;
+        double y;
+
         for(int i = 0; i < n; i++) {
-            System.out.println("Input x of your point №" + (i + 1));
-            x = sc.nextInt();
-            System.out.println("Input y of your point №" + (i + 1));
-            y = sc.nextInt();
+            System.out.println("Input x and y of your point №" + (i + 1) + "(with whitespaces)");
+            x = sc.nextDouble();
+            y = sc.nextDouble();
             points[i] = new Point(x, y);
         }
 
@@ -23,8 +23,8 @@ public class MyApplication {
         for (int i = 0; i < n; i++) {
             System.out.print(points[i].toString() + " ");
         }
-        System.out.println("\nPerimeter of your shape is: " + shape.perimeter());
-        System.out.println("Average side of your shape is: " + shape.averageside());
-        System.out.println("Longest side of your shape is: " + shape.longestside());
+        System.out.println("\nPerimeter of your shape is: " + shape.calculatePerimeter());
+        System.out.println("Average side of your shape is: " + shape.getAverageSide());
+        System.out.println("Longest side of your shape is: " + shape.getLongestSide());
     }
 }

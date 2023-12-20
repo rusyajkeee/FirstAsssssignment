@@ -1,26 +1,26 @@
 public class Point {
 
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 //zxc zxc.setX(4) zxc.x = 4
-    public void setX(int x) {
+    public void setX(double x) {
         this.x = x;
     }
 
-    public void setY(int y) {
+    public void setY(double y) {
         this.y = y;
     }
 
-    public Point(int x, int y) {
+    public Point(double x, double y) {
         setX(x);
         setY(y);
     }
 
 
-    public int getx() {
+    public double getx() {
         return x;
     }
-    public int gety() {
+    public double gety() {
         return y;
     }
     public double distanceTo(Point a, Point b) {
