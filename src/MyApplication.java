@@ -18,9 +18,13 @@ public class MyApplication {
             points[i] = new Point(x, y);
         }
 
-        Shape xd = new Shape(points);
-        System.out.println("Perimeter of your shape is: " + xd.perimeter());
-        System.out.println("Average side of your shape is: " + xd.averageside());
-        System.out.println("Longest side of your shape is: " + xd.longestside());
+        Shape shape = new Shape(points);
+        System.out.print("Your shape consists of points: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(points[i].toString() + " ");
+        }
+        System.out.println("\nPerimeter of your shape is: " + shape.perimeter());
+        System.out.println("Average side of your shape is: " + shape.averageside());
+        System.out.println("Longest side of your shape is: " + shape.longestside());
     }
 }

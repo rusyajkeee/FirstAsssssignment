@@ -29,7 +29,7 @@ public class Point {
 
     @Override
     public String toString() {
-        return "Point{" +
+        return "{" +
                 "x=" + x +
                 ", y=" + y +
                 '}';
