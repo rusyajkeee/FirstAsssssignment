@@ -1,3 +1,6 @@
+import models.Point;
+import models.Shape;
+
 import java.util.Scanner;
 
 public class MyApplication {
@@ -23,9 +26,7 @@ public class MyApplication {
         for (int i = 0; i < n; i++) {
             System.out.print(points[i].toString() + " ");
         }
-        System.out.println("\nPerimeter of your shape is: " + shape.calculatePerimeter());
-        System.out.println("Longest side of your shape is: " + shape.getLongestSide());
-        System.out.println("Average side of your shape is: " + shape.getAverageSide());
+        shape.getInfo();
 
     }
 }

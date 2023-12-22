@@ -1,3 +1,7 @@
+package models;
+
+import models.Point;
+
 public class Shape {
     Point[] points;
 
@@ -29,5 +33,11 @@ public class Shape {
 
     public double getAverageSide() {
         return this.calculatePerimeter() / this.points.length;
+    }
+
+    public void getInfo() {
+        System.out.println("\nPerimeter of your shape is: " + this.calculatePerimeter());
+        System.out.println("Longest side of your shape is: " + this.getLongestSide());
+        System.out.println("Average side of your shape is: " + this.getAverageSide());
     }
 }
