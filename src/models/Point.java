@@ -19,14 +19,14 @@ public class Point {
     }
 
 
-    public double getx() {
+    public double getX() {
         return x;
     }
-    public double gety() {
+    public double getY() {
         return y;
     }
-    public double distanceTo(Point a, Point b) {
-        return Math.sqrt(Math.pow(b.getx() - a.getx(), 2) + Math.pow(b.gety() - a.gety(), 2));
+    public double distanceTo(Point b) {
+        return Math.sqrt(Math.pow(b.getX() - this.getX(), 2) + Math.pow(b.getY() - this.getY(), 2));
     }
 
     @Override

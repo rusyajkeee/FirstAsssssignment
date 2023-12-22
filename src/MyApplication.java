@@ -1,31 +1,28 @@
 import models.Point;
 import models.Shape;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class MyApplication {
+    public static void main(String[] args) throws FileNotFoundException {
+        File file = new File("C:\\Users\\xd\\IdeaProjects\\AssssignmentOne\\src\\source.txt");
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Input number of your points: ");
-        int n = sc.nextInt();
-        Point[] points = new Point[n];
+        Scanner sc = new Scanner(file);
 
-        double x;
-        double y;
+        Shape shape = new Shape();
 
-        for(int i = 0; i < n; i++) {
-            System.out.println("Input x and y of your point №" + (i + 1) + "(with whitespaces)");
-            x = sc.nextDouble();
-            y = sc.nextDouble();
-            points[i] = new Point(x, y);
+
+                while (sc.hasNext()) {
+            double x = sc.nextDouble();
+            double y = sc.nextDouble();
+
+            Point point = new Point(x, y);
+            shape.addPoints(point);
         }
 
-        Shape shape = new Shape(points);
-        System.out.print("Your shape consists of points: ");
-        for (int i = 0; i < n; i++) {
-            System.out.print(points[i].toString() + " ");
-        }
+
         shape.getInfo();
 
     }
