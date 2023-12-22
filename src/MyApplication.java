@@ -21,8 +21,7 @@ public class MyApplication {
             Point point = new Point(x, y);
             shape.addPoints(point);
         }
-
-
+        System.out.println(shape.toString());
         shape.getInfo();
 
     }

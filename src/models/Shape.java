@@ -36,7 +36,6 @@ public class Shape {
     }
 
     public void getInfo() {
-        System.out.println(toString());
         System.out.println("\n its perimeter equals to " + calculatePerimeter(pointsList) +
                 "\n its average side is " + getAverageSide(pointsList) +
                 "\n its longest side is " + getLongestSide(pointsList));
