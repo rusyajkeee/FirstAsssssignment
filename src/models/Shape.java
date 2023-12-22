@@ -1,6 +1,5 @@
 package models;
 
-import models.Point;
 
 public class Shape {
     Point[] points;
