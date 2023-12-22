@@ -4,10 +4,6 @@ import java.util.ArrayList;
 
 public class Shape {
     private ArrayList<Point> pointsList = new ArrayList<>();
-
-    public Shape() {
-        ArrayList<Point> pointsList = new ArrayList<>();
-    }
     public void addPoints(Point a) {
         this.pointsList.add(a);
     }
